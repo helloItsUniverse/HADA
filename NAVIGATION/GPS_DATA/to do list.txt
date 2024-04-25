@@ -1,0 +1,29 @@
+Visual Studio 19.6.2 버전 기준
+
+_MSC_VER == 1928
+
+
+b2 -j4 -a --toolset=msvc-14.28 variant=debug,release link=static threading=multi address-model=32 lib32
+
+
+b2 -j4 -a --toolset=msvc-14.28 variant=debug,release link=static threading=multi address-model=64 lib64
+
+
+* 제거
+18762~20105
+
+
+* 살려
+1~15650
+
+
+* 
+
+데이터 정리
+
+%% k-city global guidance waypoint 찍기 : 작년 기준으로
+
+학교 안에서 웨이포인트 찍기 (주차장)
+
+변환 및 역변환
+

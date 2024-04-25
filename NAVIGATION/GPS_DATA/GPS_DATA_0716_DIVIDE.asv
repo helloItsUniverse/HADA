@@ -1,0 +1,36 @@
+%------------------------------------------------------------------%
+% HADA 2022
+%------------------------------------------------------------------%
+% About      : Dividing Sections From GPS Data
+% Created    : 2022.07.19
+% Modified   : 2022.07.19
+% Editted by : Wooju So
+%------------------------------------------------------------------%
+
+clear all; close all; clc;
+
+%% CLEANED DATA (COMPLETE)
+
+clear all; close all; clc;
+
+load('data/GPS_DATA_0716_01_CLEANED_AND_MERGED.mat')
+
+geoplot_with_index(PTS_CLEANED_ALL, 'g.', 1, 'Stop Lines' )
+
+
+
+%% STOP LINES (COMPLETE)
+
+clear all; close all; clc;
+
+load('data/GPS_DATA_0716_02_STOP_LINES.mat')
+
+geoplot_with_index(PTS_STOP_LINE_ALL, 'g.', 2, 'Stop Lines' )
+
+%% PARKING LOTS (COMPLETE)
+
+clear all; close all; clc;
+
+load('data/GPS_DATA_0716_03_PARKING_LOTS.mat')
+
+geoplot_with_index(PTS_PARKING_ALL, 'g.', 3, 'Stop Lines' )
